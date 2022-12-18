@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" th:action="@{/addStudent/submit}" th:object="${student}" method="POST">
+		Nombre: <input id="nombre" type="text" th:field="*{name}">
+		Apellido: <input id="apellido" type="text" th:field="*{surname}">
+		Edad: <input id="edad" type="number" th:field="*{age}">
+		<button type="submit">Enviar</button>
+	
+	</form>  
+
+</body>
+</html>

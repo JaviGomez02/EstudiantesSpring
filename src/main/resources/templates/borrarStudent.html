@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:object="${student}" action="#" th:action="@{/borrarStudent/submit}" method="POST">
+		<h1>Seguro que desea borrar al estudiante</h1><h1 th:text="${student.name}"></h1>
+		<input id="nombre" th:field="*{name}" th:value="${student.name}" readonly>
+		<input id="nombre" th:field="*{surname}" th:value="${student.surname}" readonly>
+		<input id="nombre" th:field="*{age}" th:value="${student.age}" readonly>
+		<button type="submit">Si</button>
+	
+	</form>
+
+</body>
+</html>
